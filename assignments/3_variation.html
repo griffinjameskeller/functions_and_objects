@@ -20,14 +20,21 @@
 	function draw() {
     //this line will call your function and pass it a color
     //feel free to change the color
-			drawTarget("#FF0000");
-	
+      clear();
+      drawTarget("#FF0000");
+
   }
 
 //make your target from #2 move around depending on the mouse position
 
   function drawTarget(targetColor){
 
+    fill (targetColor);
+    ellipse(mouseX,mouseY,100,100);
+    ellipse(mouseX,mouseY,80,80);
+    ellipse(mouseX,mouseY,60,60);
+    ellipse(mouseX,mouseY,40,40);
+    ellipse(mouseX,mouseY,20,20);
 
 
   }
@@ -42,9 +49,3 @@
 <body>
 </body>
 </html>
-
-
-
-
-
-

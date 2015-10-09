@@ -16,16 +16,16 @@
 
     }
 
-    
+
 
 	function draw() {
-      //create the object and initialize it 
+      //create the object and initialize it
       //with a color (feel free to change the color)
       var myTarget = new Target("#FF0000");
-
+      clear();
       //Then call the drawTarget method to draw the object
 			myTarget.drawTarget();
-	
+
   }
 
   //create an object instead of a function
@@ -35,8 +35,15 @@
   //and a drawTarget method
 
   function Target(targetColor){
+      this.drawTarget = function (){
+        fill (targetColor);
+        ellipse(mouseX,mouseY,100,100);
+        ellipse(mouseX,mouseY,80,80);
+        ellipse(mouseX,mouseY,60,60);
+        ellipse(mouseX,mouseY,40,40);
+        ellipse(mouseX,mouseY,20,20);
 
-
+}
 
   }
 
@@ -50,9 +57,3 @@
 <body>
 </body>
 </html>
-
-
-
-
-
-
